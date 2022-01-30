@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductAlertsComponent,
     ProductDetailComponent,
   ],
+  providers: [CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
